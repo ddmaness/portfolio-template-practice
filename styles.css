@@ -1,0 +1,206 @@
+/*
+====================================================
+
+Layout
+
+====================================================
+*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h3, h1 {
+    padding-bottom: 40px;
+}
+
+.flex-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.inner {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.nav-bar{
+    display: flex;
+    padding-top: 42px;
+}
+
+.logo {
+    width:48px;
+    flex:none;
+}
+
+.nav-section{
+    flex:1 1 auto;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items li {
+    margin-left: 20px;
+}
+
+.home {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.home-text {
+    padding-top:180px;
+    max-width: 476px;
+    flex: 0 1;
+}
+
+.home-button {
+    align-self: flex-end;
+    margin:40px 0 180px 0;
+}
+
+.centered, .centered-info {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+footer, .centered-info, .stats, .service-list {
+    padding: 100px 0;
+}
+
+.centered-text {
+    max-width: 620px;
+    flex: 0 1;
+    text-align: center;
+}
+
+.skills {
+    padding: 160px 0;
+}
+
+.skills-info {
+    max-width: 503px;
+}
+
+.progress-bar {
+    background-color: gray;
+    width: 100%;
+    height: 8px;
+    margin:16px 0 32px 0;
+}
+
+.progress-fill {
+    background-color: teal;
+    width: 76%;
+    height: 8px;
+}
+.stats {
+    display: flex;
+}
+
+.stat-item {
+    display:flex;
+    flex-wrap:wrap;
+    width:25%;
+}
+
+.responsive-list {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-first-row, .project-second-row {
+    height: 303px;
+    flex: 0 0 341px;
+}
+
+.project-first-row:nth-child(odd), .project-second-row:nth-child(even) {
+}
+
+.video {
+    width: 100%;
+    height: 574px;
+    margin-top: 100px;
+}
+
+.service-list {
+    justify-content: space-around;
+}
+
+.service {
+    height: 137px;
+    flex: 0 0 260px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.testimonial {
+    padding-top: 180px;
+    padding-bottom: 55px;
+    max-width: 807px;
+}
+
+.testimonial button {
+    margin-top: 100px;
+}
+
+.testimonial p {
+    padding-top:36px;
+}
+
+.company-list {
+    justify-content: space-around;
+    padding: 56px 0;
+}
+
+.contact p {
+    margin-bottom: 44px;
+}
+
+.contact-form {
+    max-width: 674px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form input:nth-of-type(2){
+    margin-left: 26px;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    padding-left: 16px;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 28px;
+}
+
+textarea {
+    padding-top: 16px;
+    height: 164px;
+}
+
+.small-input {
+    width: 48%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.company-info {
+    flex: 0 0 400px;
+}
