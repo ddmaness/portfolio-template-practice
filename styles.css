@@ -72,22 +72,35 @@ footer, .centered-info, .stats, .service-list {
     padding: 100px 0;
 }
 
+.load {
+    padding: 50px 0;
+}
+
 .centered-text {
     max-width: 620px;
     flex: 0 1;
     text-align: center;
 }
 
+.skills-background {
+    height: 100%;
+    width: 50%;
+}
+
 .skills {
-    padding: 160px 0;
+    display: flex;
+    height: 624px;
+    align-items: center;
 }
 
 .skills-info {
-    max-width: 503px;
+    padding: 0 100px;
+    width: 50%;
+    background-color: white; 
 }
 
 .progress-bar {
-    background-color: gray;
+    background-color: rgb(167, 166, 166);
     width: 100%;
     height: 8px;
     margin:16px 0 32px 0;
@@ -95,16 +108,23 @@ footer, .centered-info, .stats, .service-list {
 
 .progress-fill {
     background-color: #673AB7;
-    width: 76%;
+    width: 46%;
     height: 8px;
 }
-.stats {
+
+.stats, .testimonial-background {
+    background-color: #673AB7;
+    color: white;
+}
+
+.stat-list {
     display: flex;
 }
 
 .stat-item {
     display:flex;
     flex-wrap:wrap;
+    align-items: center;
     width:25%;
 }
 
@@ -116,13 +136,26 @@ footer, .centered-info, .stats, .service-list {
 
 .project-first-row, .project-second-row {
     height: 303px;
-    flex: 0 0 341px;
+    flex: 1 0 341px;
+    border: 1px solid slategrey;
 }
 
+/* credit to https://benmarshall.me/responsive-iframes/ for responsive iframe technique */
+
 .video {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 39.4%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 574px;
-    margin-top: 100px;
+    height: 100%;
 }
 
 .service-list {
@@ -130,6 +163,7 @@ footer, .centered-info, .stats, .service-list {
 }
 
 .service {
+    margin-top: 16px;
     height: 137px;
     flex: 0 0 260px;
     display:flex;
@@ -193,7 +227,7 @@ textarea {
     width: 48%;
 }
 
-footer {
+.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -201,6 +235,14 @@ footer {
 
 .company-info {
     flex: 0 0 400px;
+}
+
+.nav-background, .home-background, .skills-background, .load {
+    background-color: #EDE7F6;
+} 
+
+.footer-background {
+    background-color: #212121;
 }
 
 /*
@@ -216,7 +258,14 @@ body {
     line-height: 1.5em;
 }
 
-h1, h3, .skills-info h5, .stats h5, .nav-items, .service h5, .testimonial h5 {
+h1,
+h3, 
+.skills-info h5, 
+.stats h5, 
+.nav-items, 
+.service h5, 
+.testimonial h5, 
+.load{
     font-weight: bold;
 }
 
@@ -236,7 +285,40 @@ h3 {
     font-size: 12px;
 }
 
-p, li{
+.load, p, li{
     color: #424242
 }
 
+.stat-list p, 
+.testimonial p, 
+footer {
+    color: white;
+}
+
+/*
+==============================
+
+Buttons
+
+==============================
+*/
+button{
+    background-color: #673AB7;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    border: none;
+}
+
+/*
+===============================
+
+Icons
+
+===============================
+*/
+.icon img {
+    padding-right:16px;
+    height: 50px;
+    width: 50px;
+}
