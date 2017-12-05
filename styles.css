@@ -159,6 +159,7 @@ footer, .centered-info, .stats, .service-list {
 }
 
 .service-list {
+    align-items: baseline;
     justify-content: space-around;
 }
 
