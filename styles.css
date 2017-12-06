@@ -98,6 +98,7 @@ footer, .centered-info, .stats, .service-list {
     padding: 50px 0;
 }
 
+
 .centered-text {
     max-width: 620px;
     flex: 0 1;
@@ -156,10 +157,14 @@ footer, .centered-info, .stats, .service-list {
     flex-wrap: wrap;
 }
 
-.project-first-row, .project-second-row {
+.project {
     height: 303px;
-    flex: 1 0 341px;
+    flex: 0 0 341px;
     border: 1px solid slategrey;
+}
+
+.hidden-projects {
+    display: none;
 }
 
 /* credit to https://benmarshall.me/responsive-iframes/ for responsive iframe technique */
@@ -243,6 +248,7 @@ input, textarea {
 }
 
 textarea {
+    resize: none;
     padding-top: 16px;
     height: 164px;
 }
@@ -266,7 +272,7 @@ textarea {
 } 
 
 .footer-background,
-.fixed-nav  {
+.fixed-nav{
     background-color: #212121;
 }
 
@@ -320,6 +326,14 @@ footer {
     color: white;
 }
 
+.nav-bar .nav-items li:first-of-type {
+    color: #673AB7;
+}
+
+li {
+    transition: color 500ms;
+}
+
 /*
 ==============================
 
@@ -333,6 +347,15 @@ button{
     font-weight: bold;
     padding: 16px;
     border: none;
+}
+
+.load-more-text {
+    transition: color 500ms;
+}
+
+.load-more-text:hover {
+    color : #673AB7;
+    cursor: pointer;
 }
 
 /*

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body onscroll="dropNav()">
+<body onscroll="dropNav(); activeNavHighlight()">
     <div class="flex-wrapper">
         <nav class="nav-background fixed-nav hide-top">
             <div class="inner fixed-nav-bar">
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <secion class="centered-info">
+        <secion class="about centered-info">
             <div class="centered-text">
                 <h3>About Us</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -86,22 +86,38 @@
             </div>
         </section>
         </div>
-        <section class="responsive-list">
-            <div class="project-first-row"></div><!--
-            --><div class="project-first-row"></div><!--
-            --><div class="project-first-row"></div><!--
-            --><div class="project-first-row"></div><!--
-            --><div class="project-second-row"></div><!--
-            --><div class="project-second-row"></div><!--
-            --><div class="project-second-row"></div><!--
-            --><div class="project-second-row"></div>
+        <section class="project-list">
+            <div class="responsive-list"><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div>
+            </div><!--
+            --><div class="responsive-list hidden-projects"><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div><!--
+                --><div class="project"></div>
+            </div>
         </section>
         <section class="load centered">
             <div class="centered-text">
-                <h5>LOAD MORE WORK</h5>
+                <h5 class="load-more-text" onclick = "revealProjects()">LOAD MORE WORK</h5>
             </div>
         </section>
-        <section class="centered-info">
+        <section class="work centered-info">
             <div class="centered-text">
                 <h3>Our Work Process</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
@@ -135,11 +151,11 @@
             </div>
         </section>
         <section class="inner company-list responsive-list">
-                <div class="company-logo">companylogo</div><!--
-                --><div class="company-logo">companylogo</div><!--
-                --><div class="company-logo">companylogo</div><!--
-                --><div class="company-logo">companylogo</div><!--
-                --><div class="company-logo">companylogo</div>
+                <div class="company-logo"><img src="icons/tyrell.svg" alt="company logo"></div><!--
+                --><div class="company-logo"><img src="icons/aperture.svg" alt="company logo"></div><!--
+                --><div class="company-logo"><img src="icons/momcorp.svg" alt="company logo"></div><!--
+                --><div class="company-logo"><img src="icons/weland-yutani.svg" alt="company logo"></div><!--
+                --><div class="company-logo"><img src="icons/omni-consumer-products.svg" alt="company logo"></div>
         </section>
         <section class="contact">
             <div class="centered-info">
