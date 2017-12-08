@@ -409,7 +409,6 @@ Three dot scroller
     background-color: white;
     border-radius: 50%;
     margin: 4px 8px;
-    transition: height 100ms, width 100ms;
 }
 
 .active-dot {
