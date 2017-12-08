@@ -49,3 +49,19 @@ function activeNavHighlight() {
 		}
 	});
 }
+
+function testimonialScroll() {
+	var testimonials = document.getElementsByClassName('testimonial-text');
+	var dots = document.getElementsByClassName('dot')
+	for (var i = 0; i < 3; i++) {
+		var nextIndex = (i + 1) % 3;
+		if (testimonials[i].classList.contains('active')) {
+			testimonials[i].classList.remove('active');
+			testimonials[nextIndex].classList.add('active');
+			dots[i].classList.remove('active-dot');
+			dots[nextIndex].classList.add('active-dot');
+
+			break;
+		}
+	}
+}
