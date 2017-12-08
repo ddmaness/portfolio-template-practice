@@ -343,8 +343,25 @@ footer {
     color: white;
 }
 
-.nav-bar .nav-items li:first-of-type {
+.nav-items li, {
+    -webkit-transition: color 100ms;
+    -moz-transition: color 100ms;
+    transition: color 100ms;
+}
+
+.nav-bar .nav-items li:hover {
     color: #673AB7;
+    cursor: pointer;
+}
+
+.fixed-nav-bar .nav-items li:hover {
+    cursor: pointer;
+    color: #EDE7F6 !important;
+}
+
+.nav-bar .nav-items li:active,
+.fixed-nav-bar .nav-items li:active {
+    color: #424242;
 }
 
 li {
