@@ -398,7 +398,7 @@ button:focus {
 }
 
  button:active {
-     box-shadow: 2px 2px 3px 3px rgba(20, 20, 37, 0.527);
+     box-shadow: 2px 2px 3px 1px rgba(20, 20, 37, 0.527);
  }
 
 .load-more-text {
