@@ -60,7 +60,6 @@ function testimonialScroll() {
 			testimonials[nextIndex].classList.add('active');
 			dots[i].classList.remove('active-dot');
 			dots[nextIndex].classList.add('active-dot');
-
 			break;
 		}
 	}

@@ -160,7 +160,8 @@ footer, .centered-info, .stats, .service-list {
 .project {
     height: 303px;
     flex: 1 0 341px;
-    border: 1px solid slategrey;
+    background-color: #EDE7F6;
+    border: 2px solid white;
 }
 
 .hidden-projects {
