@@ -405,6 +405,10 @@ Icons
     width: 50px;
 }
 
+.fixed-nav-bar .logo:hover {
+    cursor: pointer;
+}
+
 /*
 ================================
 

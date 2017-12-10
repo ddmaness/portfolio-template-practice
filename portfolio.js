@@ -39,7 +39,7 @@ function activeNavHighlight() {
 			items[index + 1].style.color = '#EDE7F6';
 			return;
 		}
-		if (currentY > elem.offsetTop && currentY <= arr[index + 1].offsetTop ){
+		if (currentY >= elem.offsetTop && currentY < arr[index + 1].offsetTop ){
 			items[index + 1].style.color = '#EDE7F6';
 			return;
 		}
