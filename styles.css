@@ -159,7 +159,7 @@ footer, .centered-info, .stats, .service-list {
 
 .project {
     height: 303px;
-    flex: 0 0 341px;
+    flex: 1 0 341px;
     border: 1px solid slategrey;
 }
 
@@ -357,6 +357,10 @@ footer {
 .fixed-nav-bar .nav-items li:hover {
     cursor: pointer;
     color: #EDE7F6 !important;
+}
+
+.footer li {
+    cursor: pointer;
 }
 
 .nav-bar .nav-items li:active,
