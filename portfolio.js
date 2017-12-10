@@ -2,7 +2,7 @@
 
 function dropNav() {
 	if(document.documentElement.scrollTop > 583) {
-		document.getElementsByClassName('fixed-nav')[0].classList.remove('hide-top')
+		document.getElementsByClassName('fixed-nav')[0].classList.remove('hide-top');
 	}
 	else {
 		document.getElementsByClassName('fixed-nav')[0].classList.add('hide-top');
@@ -52,7 +52,7 @@ function activeNavHighlight() {
 
 function testimonialScroll() {
 	var testimonials = document.getElementsByClassName('testimonial-text');
-	var dots = document.getElementsByClassName('dot')
+	var dots = document.getElementsByClassName('dot');
 	for (var i = 0; i < 3; i++) {
 		var nextIndex = (i + 1) % 3;
 		if (testimonials[i].classList.contains('active')) {
@@ -63,5 +63,32 @@ function testimonialScroll() {
 
 			break;
 		}
+	}
+}
+
+/* smooth scroll function adapted from http://web.archive.org/web/20140213105950/http://itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript */
+
+function smoothScroll(eClass) {
+
+	var startY = self.pageYOffset;
+	var stopY = document.getElementsByClassName(eClass)[0].offsetTop;
+	var distance = stopY > startY ? stopY - startY : startY - stopY;
+	if (distance < 100) {
+		scrollTo(0, stopY); return;
+	}
+	var speed = Math.round(distance / 100);
+	if (speed >= 20) speed = 20;
+	var step = Math.round(distance / 25);
+	var leapY = stopY > startY ? startY + step : startY - step;
+	var timer = 0;
+	if (stopY > startY) {
+		for ( var i=startY; i<stopY; i+=step ) {
+			setTimeout('window.scrollTo(0, '+leapY+')', timer * speed);
+			leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+		} return;
+	}
+	for ( var i=startY; i>stopY; i-=step ) {
+		setTimeout('window.scrollTo(0, '+leapY+')', timer * speed);
+		leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
 	}
 }
