@@ -168,6 +168,20 @@ footer, .centered-info, .stats, .service-list {
     display: none;
 }
 
+.overlay {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+    background-color: rgb(143, 143, 143);
+}
+
+.project:hover .overlay {
+    visibility: visible;
+}
 /* credit to https://benmarshall.me/responsive-iframes/ for responsive iframe technique */
 
 .video {
