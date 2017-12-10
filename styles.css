@@ -208,6 +208,9 @@ footer, .centered-info, .stats, .service-list {
 
 .testimonial-background {
     min-height: 471px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .testimonial-text {
