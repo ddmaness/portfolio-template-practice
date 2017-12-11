@@ -6,6 +6,9 @@ Layout
 ====================================================
 */
 
+html, body {
+    width: 100% !important;
+}
 
 h3, h1 {
     padding-bottom: 40px;
@@ -521,7 +524,7 @@ Responsive Styling
     }
 
     .company-info{
-        flex-basis: 1040px;
+        flex-basis: 100%;
         margin-bottom: 56px;
     }
 }

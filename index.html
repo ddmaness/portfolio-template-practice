@@ -1,229 +1,231 @@
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body onscroll="dropNav(); activeNavHighlight()">
-    <div class="flex-wrapper">
-        <nav class="nav-background fixed-nav hide-top">
-            <div class="inner fixed-nav-bar">
-            <div class = "logo"><img onclick="smoothScroll('nav-bar')" src="icons/main-logo-fixed-nav.svg" alt="website logo"></div>
-                <div class = "nav-section">
-                    <ul class="nav-items">
-                        <li onclick="smoothScroll('nav-bar')">HOME</li>
-                        <li onclick="smoothScroll('about')">ABOUT</li>
-                        <li onclick="smoothScroll('project-list')">WORK</li>
-                        <li onclick="smoothScroll('work')">PROCESS</li>
-                        <li onclick="smoothScroll('service-list')">SERVICES</li>
-                        <li onclick="smoothScroll('testimonial-background')">TESTIMONIALS</li>
-                        <li onclick="smoothScroll('contact')">CONTACT</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="nav-background">
-            <div class="inner nav-bar">
-                <div class = "logo"><img onclick="smoothScroll('nav-bar')" src="icons/main-logo.svg" alt="website logo"></div>
-                <div class = "nav-section">
-                    <ul class="nav-items">
-                        <li onclick="smoothScroll('about')">ABOUT</li>
-                        <li onclick="smoothScroll('project-list')">WORK</li>
-                        <li onclick="smoothScroll('work')">PROCESS</li>
-                        <li onclick="smoothScroll('service-list')">SERVICES</li>
-                        <li onclick="smoothScroll('testimonial-background')">TESTIMONIALS</li>
-                        <li onclick="smoothScroll('contact')">CONTACT</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="home-background">
-            <div class = "inner home">
-                <div class="home-text">
-                    <h1> <span>We Design</span><span> and Develop</span></h1>
-                    <p>We are a new design studio in the USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps </p>
-                    <button onclick="smoothScroll('contact')" class="home-button">CONTACT US</button>
-                </div>
-            </div>
-        </section>
-        <secion class="about centered-info">
-            <div class="centered-text">
-                <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </secion>
-        <section class="skills-section">
-            <div class="skills">
-                <div class="skills-info">
-                    <h3>Professional Skills</h3>
-                    <div>
-                        <h5>UI/UX DESIGN</h5>
-                        <div class="progress-bar"><div class="ui progress-fill"> </div></div>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="portfolio.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onscroll="dropNav(); activeNavHighlight()">
+        <div class="flex-wrapper">
+            <nav class="nav-background fixed-nav hide-top">
+                <div class="inner fixed-nav-bar">
+                <div class = "logo"><img onclick="smoothScroll('nav-bar')" src="icons/main-logo-fixed-nav.svg" alt="website logo"></div>
+                    <div class = "nav-section">
+                        <ul class="nav-items">
+                            <li onclick="smoothScroll('nav-bar')">HOME</li>
+                            <li onclick="smoothScroll('about')">ABOUT</li>
+                            <li onclick="smoothScroll('project-list')">WORK</li>
+                            <li onclick="smoothScroll('work')">PROCESS</li>
+                            <li onclick="smoothScroll('service-list')">SERVICES</li>
+                            <li onclick="smoothScroll('testimonial-background')">TESTIMONIALS</li>
+                            <li onclick="smoothScroll('contact')">CONTACT</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h5>WEB DEVELOPMENT</h5>
-                        <div class="progress-bar"><div class="dev progress-fill"> </div> </div>
+                </div>
+            </nav>
+            <nav class="nav-background">
+                <div class="inner nav-bar">
+                    <div class = "logo"><img onclick="smoothScroll('nav-bar')" src="icons/main-logo.svg" alt="website logo"></div>
+                    <div class = "nav-section">
+                        <ul class="nav-items">
+                            <li onclick="smoothScroll('about')">ABOUT</li>
+                            <li onclick="smoothScroll('project-list')">WORK</li>
+                            <li onclick="smoothScroll('work')">PROCESS</li>
+                            <li onclick="smoothScroll('service-list')">SERVICES</li>
+                            <li onclick="smoothScroll('testimonial-background')">TESTIMONIALS</li>
+                            <li onclick="smoothScroll('contact')">CONTACT</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h5>MARKETING</h5>
-                        <div class="progress-bar"><div class="marketing progress-fill"> </div> </div>
+                </div>
+            </nav>
+            <section class="home-background">
+                <div class = "inner home">
+                    <div class="home-text">
+                        <h1> <span>We Design</span><span> and Develop</span></h1>
+                        <p>We are a new design studio in the USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps </p>
+                        <button onclick="smoothScroll('contact')" class="home-button">CONTACT US</button>
                     </div>
-                </div><!--
-                --><div class="skills-background"></div>
-            </div>
-        </section>
-        <section class="stats">
-            <div class= "inner stat-list">
-                <div class="stat-item"><div class="icon"><img src="icons/portfolio.svg" alt="portfolio"></div><div><h5>548</h5><p><span>PROJECTS</span> <span>COMPLETED</span></p></div></div><!--
-                --><div class="stat-item"><div class="icon"><img src="icons/clock.svg" alt="clock"></div><div><h5>1467</h5><p><span>WORKING</span> <span>HOURS</span></p></div></div><!--
-                --><div class="stat-item"><div class="icon"><img src="icons/star.svg" alt="star"></div><div><h5>612</h5><p><span>POSITIVE</span> <span>FEEDBACKS</span></p></div></div><!--
-                --><div class="stat-item"><div class="icon"><img src="icons/heart.svg" alt="heart"></div><div><h5>735</h5><p><span>HAPPY</span> <span>CLIENTS</span></p></div></div>
-            </div>
-        </section>
-        </div>
-        <section class="project-list">
-            <div class="responsive-list"><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div>
-            </div><!--
-            --><div class="responsive-list hidden-projects"><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
-                --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div>
-            </div>
-        </section>
-        <section class="load centered">
-            <div class="centered-text">
-                <h5 class="load-more-text" onclick = "revealProjects()">LOAD MORE WORK</h5>
-            </div>
-        </section>
-        <section class="work centered-info">
-            <div class="centered-text">
-                <h3>Our Work Process</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                    </p>
-            </div>
-        </section>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/VAz3HfbdKyQ?rel=0&amp;showinfo=0"></iframe>
-        </div>
-        <section class="inner service-list responsive-list">
-            <div class="service"><div class="icon"><img src="icons/gem.svg" alt="gem"></div><h5>UI/UX Design</h5><p>voluptatem quia voluptas sit aspernatur aut odit aut fugit</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/bow.svg" alt="bow and arrow"></div><h5>Web Development</h5><p>sed quia non numquam eius modi tempora incidunt</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/mobile.svg" alt="mobile phone"></div><h5>APP/Mobile</h5><p>incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/game-controller.svg" alt="game controller"></div><h5>Game Design</h5><p>modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/airplane.svg" alt="airplane"></div><h5>SEO/Marketing</h5><p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/gray-star.svg" alt="star"></div><h5>Photography</h5><p>omnis iste natus error sit voluptatem accusantium doloremque laudantiu</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/wand.svg" alt="wand"></div><h5>Graphic Design</h5><p>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div><!--
-            --><div class="service"><div class="icon"><img src="icons/bucket.svg" alt="bucket"></div><h5>Illustrations</h5><p>numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div>
-        </section>
-        <section class="centered testimonial-background" onclick="testimonialScroll()">
-            <div class="centered-text testimonial">
-                <div class="testimonial-text">
-                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."<p>
-                    <h5>Antonina Aurileus</h5>
                 </div>
-                <div class="testimonial-text active">
-                    <p>"Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."<p>
-                    <h5>Marcus Gnaeus</h5>
-                </div>
-                <div class="testimonial-text">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<p>
-                    <h5>Iunia Quintius</h5>
-                </div>
-            </div>
-            <div class="three-dot"><div class="dot"></div><div class="dot active-dot"></div><div class="dot"></div></div>
-        </section>
-        <section class="inner company-list responsive-list">
-                <div class="company-logo"><img src="icons/tyrell.svg" alt="company logo"></div><!--
-                --><div class="company-logo"><img src="icons/aperture.svg" alt="company logo"></div><!--
-                --><div class="company-logo"><img src="icons/momcorp.svg" alt="company logo"></div><!--
-                --><div class="company-logo"><img src="icons/weland-yutani.svg" alt="company logo"></div><!--
-                --><div class="company-logo"><img src="icons/omni-consumer-products.svg" alt="company logo"></div>
-        </section>
-        <section class="contact">
-            <div class="centered-info">
+            </section>
+            <secion class="about centered-info">
                 <div class="centered-text">
-                    <h3>Need a Project?</h3>
-                    <p>
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <form class="contact-form" action="">
-                    <input class="small-input" type="text" placeholder="Your Name">
-                    <input class="small-input" type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Your Title">
-                    <textarea placeholder="Your Comment"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            </secion>
+            <section class="skills-section">
+                <div class="skills">
+                    <div class="skills-info">
+                        <h3>Professional Skills</h3>
+                        <div>
+                            <h5>UI/UX DESIGN</h5>
+                            <div class="progress-bar"><div class="ui progress-fill"> </div></div>
+                        </div>
+                        <div>
+                            <h5>WEB DEVELOPMENT</h5>
+                            <div class="progress-bar"><div class="dev progress-fill"> </div> </div>
+                        </div>
+                        <div>
+                            <h5>MARKETING</h5>
+                            <div class="progress-bar"><div class="marketing progress-fill"> </div> </div>
+                        </div>
+                    </div><!--
+                    --><div class="skills-background"></div>
+                </div>
+            </section>
+            <section class="stats">
+                <div class= "inner stat-list">
+                    <div class="stat-item"><div class="icon"><img src="icons/portfolio.svg" alt="portfolio"></div><div><h5>548</h5><p><span>PROJECTS</span> <span>COMPLETED</span></p></div></div><!--
+                    --><div class="stat-item"><div class="icon"><img src="icons/clock.svg" alt="clock"></div><div><h5>1467</h5><p><span>WORKING</span> <span>HOURS</span></p></div></div><!--
+                    --><div class="stat-item"><div class="icon"><img src="icons/star.svg" alt="star"></div><div><h5>612</h5><p><span>POSITIVE</span> <span>FEEDBACKS</span></p></div></div><!--
+                    --><div class="stat-item"><div class="icon"><img src="icons/heart.svg" alt="heart"></div><div><h5>735</h5><p><span>HAPPY</span> <span>CLIENTS</span></p></div></div>
+                </div>
+            </section>
             </div>
-        </section>
-        <footer class="footer-background">
-            <div class="inner footer">
-                <div class="company-info">
-                    <h3>Maness Design, Inc.</h3>
-                    <p>&copy; Maness. All rights reserved</p>
-                    <p>Designed by robirurk</p>
+            <section class="project-list">
+                <div class="responsive-list"><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div>
+                </div><!--
+                --><div class="responsive-list hidden-projects"><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div><!--
+                    --><div class="project"><div class = "overlay"><img src="icons/eye.svg" alt="eye"></div></div>
                 </div>
-                <div>
-                    <p>example@example.com</p>
-                    <p>+44 987 065 908</p>
+            </section>
+            <section class="load centered">
+                <div class="centered-text">
+                    <h5 class="load-more-text" onclick = "revealProjects()">LOAD MORE WORK</h5>
                 </div>
-                <div>
-                    <ul>
-                        <li onclick="smoothScroll('nav-bar')">Home</li>
-                        <li onclick="smoothScroll('project-list')">Projects</li>
-                        <li onclick="smoothScroll('about')">About</li>
-                        <li onclick="smoothScroll('service-list')">Services</li>
-                    </ul>
+            </section>
+            <section class="work centered-info">
+                <div class="centered-text">
+                    <h3>Our Work Process</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                        </p>
                 </div>
-                <div>
-                    <ul>
-                        <li>News</li>
-                        <li>Events</li>
-                        <li>Contact</li>
-                        <li>Legal</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Dribbble</li>
-                    </ul>
-                </div>
+            </section>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/VAz3HfbdKyQ?rel=0&amp;showinfo=0"></iframe>
             </div>
-        </footer>
-    </div>
-    <script type="text/javascript" src="portfolio.js"></script>
-</body>
+            <section class="inner service-list responsive-list">
+                <div class="service"><div class="icon"><img src="icons/gem.svg" alt="gem"></div><h5>UI/UX Design</h5><p>voluptatem quia voluptas sit aspernatur aut odit aut fugit</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/bow.svg" alt="bow and arrow"></div><h5>Web Development</h5><p>sed quia non numquam eius modi tempora incidunt</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/mobile.svg" alt="mobile phone"></div><h5>APP/Mobile</h5><p>incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/game-controller.svg" alt="game controller"></div><h5>Game Design</h5><p>modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/airplane.svg" alt="airplane"></div><h5>SEO/Marketing</h5><p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/gray-star.svg" alt="star"></div><h5>Photography</h5><p>omnis iste natus error sit voluptatem accusantium doloremque laudantiu</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/wand.svg" alt="wand"></div><h5>Graphic Design</h5><p>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div><!--
+                --><div class="service"><div class="icon"><img src="icons/bucket.svg" alt="bucket"></div><h5>Illustrations</h5><p>numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p></div>
+            </section>
+            <section class="centered testimonial-background" onclick="testimonialScroll()">
+                <div class="centered-text testimonial">
+                    <div class="testimonial-text">
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."<p>
+                        <h5>Antonina Aurileus</h5>
+                    </div>
+                    <div class="testimonial-text active">
+                        <p>"Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."<p>
+                        <h5>Marcus Gnaeus</h5>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."<p>
+                        <h5>Iunia Quintius</h5>
+                    </div>
+                </div>
+                <div class="three-dot"><div class="dot"></div><div class="dot active-dot"></div><div class="dot"></div></div>
+            </section>
+            <section class="inner company-list responsive-list">
+                    <div class="company-logo"><img src="icons/tyrell.svg" alt="company logo"></div><!--
+                    --><div class="company-logo"><img src="icons/aperture.svg" alt="company logo"></div><!--
+                    --><div class="company-logo"><img src="icons/momcorp.svg" alt="company logo"></div><!--
+                    --><div class="company-logo"><img src="icons/weland-yutani.svg" alt="company logo"></div><!--
+                    --><div class="company-logo"><img src="icons/omni-consumer-products.svg" alt="company logo"></div>
+            </section>
+            <section class="contact">
+                <div class="centered-info">
+                    <div class="centered-text">
+                        <h3>Need a Project?</h3>
+                        <p>
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                    </div>
+                    <form class="contact-form" action="">
+                        <input class="small-input" type="text" placeholder="Your Name">
+                        <input class="small-input" type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Your Title">
+                        <textarea placeholder="Your Comment"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer-background">
+                <div class="inner footer">
+                    <div class="company-info">
+                        <h3>Maness Design, Inc.</h3>
+                        <p>&copy; Maness. All rights reserved</p>
+                        <p>Designed by robirurk</p>
+                    </div>
+                    <div>
+                        <p>example@example.com</p>
+                        <p>+44 987 065 908</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li onclick="smoothScroll('nav-bar')">Home</li>
+                            <li onclick="smoothScroll('project-list')">Projects</li>
+                            <li onclick="smoothScroll('about')">About</li>
+                            <li onclick="smoothScroll('service-list')">Services</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>News</li>
+                            <li>Events</li>
+                            <li>Contact</li>
+                            <li>Legal</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Dribbble</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
