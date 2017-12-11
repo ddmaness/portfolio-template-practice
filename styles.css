@@ -20,6 +20,12 @@ h3, h1 {
     margin: auto;
 }
 
+.menu-burger {
+    display: none;
+    background-color: #EDE7F6;
+    padding: 16px 0 0 16px;
+}
+
 .nav-bar,
 .fixed-nav-bar {
     display: flex;
@@ -57,6 +63,7 @@ h3, h1 {
 }
 
 .nav-items{
+    margin-right:16px;
     display: flex;
     justify-content: flex-end;
 }
@@ -74,7 +81,7 @@ h3, h1 {
 }
 
 .home-text {
-    padding-top:180px;
+    padding:180px 16px 0px 16px;
     max-width: 476px;
     flex: 0 1;
 }
@@ -112,6 +119,7 @@ footer, .centered-info, .stats, .service-list {
 
 .skills {
     display: flex;
+    flex-grow: 1;
     height: 624px;
     align-items: center;
 }
@@ -131,8 +139,19 @@ footer, .centered-info, .stats, .service-list {
 
 .progress-fill {
     background-color: #673AB7;
-    width: 46%;
     height: 8px;
+}
+
+.progress-fill.ui {
+    width: 77%;
+}
+
+.progress-fill.dev {
+    width: 89%;
+}
+
+.progress-fill.marketing {
+    width:46%;
 }
 
 .stats, .testimonial-background {
@@ -145,6 +164,8 @@ footer, .centered-info, .stats, .service-list {
 }
 
 .stat-item {
+    margin-left: 8px;
+    margin-right: 8px;
     display:flex;
     flex-wrap:wrap;
     align-items: center;
@@ -224,7 +245,7 @@ footer, .centered-info, .stats, .service-list {
     min-height: 471px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .testimonial-text {
@@ -245,7 +266,7 @@ footer, .centered-info, .stats, .service-list {
 }
 
 .testimonial {
-    padding-top: 180px;
+    padding-top: 160px;
     padding-bottom: 55px;
     max-width: 807px;
 }
@@ -476,4 +497,170 @@ Three dot scroller
     height: 8px;
     width: 8px;
     margin-top: 2px;
+}
+
+/*
+=======================================
+
+Responsive Styling
+
+=======================================
+*/
+
+@media screen and (max-width: 1040px) {
+    .stat-item .icon {
+        width: 100%;
+    }
+    .stat-item .icon, 
+    .stat-item span {
+        display: block;
+    }
+
+    .footer {
+        padding: 0 36px;
+    }
+
+    .company-info{
+        flex-basis: 1040px;
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .testimonial p,
+    .about p,
+    .work p,
+    .contact p {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar .logo {
+        display: none;
+    }
+
+    .nav-background {
+        background-color: transparent;
+        position: absolute;
+        width: 5%
+    }
+
+    .nav-items {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 600px;
+    }
+
+    .nav-items li {
+        transform: rotate(-90deg);
+    }
+
+    .home-background {
+        width: 100%;
+        padding-left: 48px;
+    }
+    .home-text {
+        padding-top: 68px; 
+    }
+
+    .home button {
+        margin-bottom: 0;
+    }
+
+    .nav-items li:last-of-type,
+    .nav-items li:first-of-type,
+    .fixed-nav {
+        display:none;
+    }
+
+    .about {
+        padding-bottom: 32px;
+        padding-left: 48px;
+        background-color: #EDE7F6 
+    }
+
+    .skills-section {
+        flex:1 1 500px;
+    }
+
+    .skills {
+        text-align: center;
+        height: 400px;
+    }
+
+    .skills-info {
+        width: 100%;
+    }
+
+    .skills-background {
+        display: none;
+    }
+
+    .project {
+        border-width: 16px;
+    }
+
+    .video {
+        width: 90%;
+        padding-bottom:50%;
+    }
+
+    .small-input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-form input:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .company-info {
+        flex-basis:0;
+        margin-bottom: 0px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .stat-item .icon {
+        width: 50px;
+        margin-right: 16px;
+    }
+    .stat-item .icon,
+    .stat-item span {
+        display: inline;
+
+    }
+
+    .home-text span:last-of-type {
+        display: inline-block;
+        width: 100%;
+        margin-top: 16px;
+    }
+    .stat-list {
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        width: 100%;
+        margin-top: 16px;
+    }    
 }
